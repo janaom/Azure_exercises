@@ -1,0 +1,41 @@
+Azure Tables provide a key/value store for applications that need to store data values, but don't need the full functionality and structure of a relational database.
+
+    In the Azure portal page for your storage container, on the left side, in the Data storage section, select Tables.
+
+    On the Tables page, select ＋ Table and create a new table named products.
+
+    After the products table has been created, in the pane on the left side, in the top section, select Storage browser (preview).
+
+    In storage explorer, select Tables and verify that the products table is listed.
+
+    Select the products table.
+
+    In the product page, select ＋ Add entity.
+
+    In the Add entity panel, enter the following key values:
+        PartitionKey: 1
+        RowKey: 1
+
+    Select Add property, and create a new property with the following values:
+    Property name 	Type 	Value
+    Name 	String 	Widget
+
+    Add a second property with the following values:
+    Property name 	Type 	Value
+    Price 	Double 	2.99
+
+    Select Insert to insert a row for the new entity into the table.
+
+    In storage browser, verify that a row has been added to the products table, and that a Timestamp column has been created to indicate when the row was last modified.
+
+    Add another entity to the products table with the following properties:
+    Property name 	Type 	Value
+    PartitionKey 	String 	1
+    RowKey 	String 	2
+    Name 	String 	Kniknak
+    Price 	Double 	1.99
+    Discontinued 	Boolean 	true
+
+    After inserting the new entity, verify that a row containing the discontinued product is shown in the table.
+
+    You have manually entered data into the table using the storage browser interface. In a real scenario, application developers can use the Azure Storage Table API to build applications that read and write values to tables, making it a cost effective and scalable solution for NoSQL storage.
