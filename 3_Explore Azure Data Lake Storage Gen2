@@ -1,0 +1,14 @@
+Azure Data Lake Store Gen2 support enables you to use hierarchical folders to organize and manage access to blobs. It also enables you to use Azure blob storage to host distributed file systems for common big data analytics platforms.
+
+    Download the product2.json JSON file from https://aka.ms/product2.json and save it on your computer in the same folder where you downloaded product1.json previously - you'll upload it to blob storage later).
+    In the Azure portal page for your storage account, on the left side, scroll down to the Settings section, and select Data Lake Gen2 upgrade.
+    In the Data Lake Gen2 upgrade page, expand and complete each step to upgrade your storage account to enable hierarchical namespace and support Azure Data Lake Storage Gen 2. This may take some time.
+    When the upgrade is complete, in the pane on the left side, in the top section, select Storage browser (preview) and navigate back to the root of your data blob container, which still contains the product_data folder.
+    Select the product_data folder, and verify it still contains the product1.json file you uploaded previously.
+    Use the ⤒ Upload button to open the Upload blob panel.
+    In the Upload blob panel, select the product2.json file you saved on your local computer. Then select the Upload button.
+    Close the Upload blob panel if it's still open, and verify that a product_data folder now contains the product2.json file.
+    On the left side, in the Data storage section, select Containers.
+    Open the data container, and verify that the product_data folder you created is listed.
+    Select the ‧‧‧ icon at the right-end of the folder, and note that with hierarchical namespace enabled, you can perform configuration tasks at the folder-level; including renaming folders and setting permissions.
+    Use the X icon at the top right in the data page to close the page and return to the Containers page.
