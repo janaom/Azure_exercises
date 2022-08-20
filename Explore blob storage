@@ -1,0 +1,41 @@
+Now that you have an Azure Storage account, you can create a container for blob data.
+
+    Download the product1.json JSON file from https://aka.ms/product1.json and save it on your computer (you can save it in any folder - you'll upload it to blob storage later).
+
+    If the JSON file is displayed in your browser, save the page as product1.json.
+
+    In the Azure portal page for your storage container, on the left side, in the Data storage section, select Containers.
+
+    In the Containers page, select ＋ Container and add a new container named data with a public access level of Private (no anonymous access).
+
+    When the data container has been created, verify that it's listed in the Containers page.
+
+    In the pane on the left side, in the top section, select Storage browser (preview). This page provides a browser-based interface that you can use to work with the data in your storage account.
+
+    In the storage browser page, select Blob containers and verify that your data container is listed.
+
+    Select the data container, and note that it's empty.
+
+    Select ＋ Add Directory and read the information about folders before creating a new directory named products.
+
+    In storage explorer, verify that the current view shows the contents of the products folder you just created - observe that the "breadcrumbs" at the top of the page reflect the path Blob containers > data > products.
+
+    In the breadcrumbs, select data to switch to the data container, and note that it does not contain a folder named products.
+
+    Folders in blob storage are virtual, and only exist as part of the path of a blob. Since the products folder contained no blobs, it isn't really there!
+
+    Use the ⤒ Upload button to open the Upload blob panel.
+
+    In the Upload blob panel, select the product1.json file you saved on your local computer previously. Then in the Advanced section, in the Upload to folder box, enter product_data and select the Upload button.
+
+    Close the Upload blob panel if it's still open, and verify that a product_data virtual folder has been created in the data container.
+
+    Select the product_data folder and verify that it contains the product1.json blob you uploaded.
+
+    On the left side, in the Data storage section, select Containers.
+
+    Open the data container, and verify that the product_data folder you created is listed.
+
+    Select the ‧‧‧ icon at the right-end of the folder, and note that it doesn't display any options. Folders in a flat namespace blob container are virtual, and can’t be managed.
+
+    Use the X icon at the top right in the data page to close the page and return to the Containers page.
