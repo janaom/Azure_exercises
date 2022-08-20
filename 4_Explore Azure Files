@@ -1,0 +1,7 @@
+Azure Files provides a way to create cloud-based file shares.
+
+    In the Azure portal page for your storage container, on the left side, in the Data storage section, select File shares.
+    In the File shares page, select ＋ File share and add a new file share named files using the Transaction optimized tier.
+    In the File shares, open your new files share.
+    At the top of the page, select Connect. Then in the Connect pane, note that there are tabs for common operating systems (Windows, Linux, and macOS) that contain scripts you can run to connect to the shared folder from a client computer.
+    Close the Connect pane and then close the files page to return to the File shares page for your Azure storage account.
